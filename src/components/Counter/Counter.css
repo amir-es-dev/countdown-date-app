@@ -1,0 +1,53 @@
+.container {
+  height: 100vh;
+  background: url(../../images/Hubble.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 5rem;
+}
+
+.header {
+  color: white;
+  font-size: 3rem;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.content div {
+  color: white;
+  padding: 2rem;
+  width: 5rem;
+  height: 5rem;
+  font-size: 1.3rem;
+  margin-right: 1rem;
+  background-color: rgba(211, 211, 211, 0.315);
+  border-radius: 10px;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.header span {
+  color: orange;
+  animation-name: opacityspan;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes opacityspan {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
